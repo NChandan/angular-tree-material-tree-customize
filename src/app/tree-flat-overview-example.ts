@@ -653,7 +653,7 @@ export class TreeFlatOverviewExample {
   addNode(node: any) {
     console.log(node);
     let req = {
-      name: node.data.name.trim(),
+      name: node.name.trim(),
       parentLevel: node.isRoot ? 0 : node.parent.data.level,
       parentId: node.isRoot ? 0 : node.parent.data.id,
       companyId: node.parent.data.companyId,

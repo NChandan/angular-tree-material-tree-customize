@@ -4,7 +4,7 @@
     <input
       *ngIf="node.id==-1"
       type="text"
-      [(ngModel)]="node.data.name"
+      [(ngModel)]="node.name"
       (focusout)="addNode(node)"
     />
     <span *ngIf="node.id!=-1"> {{node}} </span>
